@@ -1,0 +1,19 @@
+{
+	"devDependencies": {
+		"concurrently": "^6.2.0",
+		"pug-cli": "^1.0.0-alpha6",
+		"rollup": "^2.56.0",
+		"stylus": "^0.54.8"
+	},
+	"private": true,
+	"scripts": {
+		"build": "concurrently \"npm:build-*\"",
+		"build-pages": "pug --out public pages",
+		"build-scripts": "rollup --file public/bundle.js --format umd --input MattMS.CatGame.Browser/Library.fs.js --name CatGame",
+		"build-styles": "stylus --compress --out public styles",
+		"watch": "concurrently \"npm:watch-*\"",
+		"watch-pages": "pug --out public --watch pages",
+		"watch-scripts": "rollup --file public/bundle.js --format umd --input MattMS.CatGame.Browser/Library.fs.js --name CatGame --watch",
+		"watch-styles": "stylus --compress --out public --watch styles"
+	}
+}
