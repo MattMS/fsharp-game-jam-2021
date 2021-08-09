@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="Library.fs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Sutil" Version="1.0.0-alpha-006" />
+		<PackageReference Include="Thoth.Json" Version="6.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="../MattMS.CatGame.Core/MattMS.CatGame.Core.fsproj" />
+	</ItemGroup>
+</Project>
