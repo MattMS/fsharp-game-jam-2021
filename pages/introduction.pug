@@ -13,6 +13,9 @@ block main
 		p.
 			They put on the friendly face of caring for cats and people,
 			but they are really just a law firm that will destroy anyone they can.
+		p You will learn their evil ways in time, but first we need to get you settled.
+		+action-group
+			+action("#ranch") I was wondering where I should go.
 
 	+screen("disfiguration")
 		p Obviously you have noticed my hideous scarring.
@@ -38,6 +41,12 @@ block main
 		p You're too kind. I imagine you are holding back the vomit just looking at me. I don't blame you.
 		+action-group
 			+action("#why") ...anyway, why are you helping me?
+
+	+screen("ranch")
+		p I guess your folks ranch will have been passed on to you now.
+		p I will help you get settled, but we have a great battle ahead of us.
+		+action-group
+			+action("ranch.html#start") I'm ready
 
 	+screen("rush")
 		p Oh... well, ok. Umm... I guess I'll just be... off then. Err... good luck?
