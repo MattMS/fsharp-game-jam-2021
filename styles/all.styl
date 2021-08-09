@@ -1,0 +1,84 @@
+.no-script .needs-script
+	display none
+
+body > header
+body > footer
+	nav
+		display block
+
+		li, ul
+			display inline-block
+			margin 0
+			padding 0
+		li
+			list-style none
+
+		a
+			display inline-block
+			padding 0 1em
+			text-decoration none
+
+body > header
+	text-align right
+
+body > footer
+	text-align right
+
+main
+	align-items center
+	display flex
+	flex-direction column
+
+// Game page
+// =========
+
+.game-script
+	p button
+		margin 0 0.5em
+
+// Home page
+// =========
+
+nav.home
+	display block
+	margin 0
+	max-width 36em
+	min-width 33%
+	padding 0
+
+	a
+		border 1px solid #aaa
+		display block
+		font-size 1.6rem
+		margin 1em
+		padding 1em 0
+		text-align center
+		text-decoration none
+
+// Story pages
+// ===========
+
+article.story:not(:target)
+	display none
+
+article.story:target
+	border 1px solid #eee
+	display block
+	font-size 1.2rem
+	margin 1em
+	max-width 36em
+	min-width 33%
+	padding 1em
+
+	nav
+		li, ul
+			margin 0
+			padding 0
+
+		li
+			list-style none
+
+		li a
+			display block
+			padding 1em 0
+			text-decoration none
