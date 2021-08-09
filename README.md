@@ -71,7 +71,7 @@ I hope that wrapping each story "page" in an `article` tag can bring me some for
 
 Although not strictly necessary, I decided to use Concurrently to simplify my npm scripts.
 
-- [@ npm](https://www.npmjs.com/package/concurrently)
+- [concurrently @ npm](https://www.npmjs.com/package/concurrently)
 
 I did have `npm-run-all`, for the sequential execution, but that does not matter now that there are no dependencies from the Pug templates.
 
@@ -79,8 +79,8 @@ I did have `npm-run-all`, for the sequential execution, but that does not matter
 "build": "run-s build-styles build-scripts build-pages",
 ```
 
-- [@ GitHub](https://github.com/mysticatea/npm-run-all)
-- [@ npm](https://www.npmjs.com/package/npm-run-all)
+- [npm-run-all @ GitHub](https://github.com/mysticatea/npm-run-all)
+- [npm-run-all @ npm](https://www.npmjs.com/package/npm-run-all)
 
 ### Pug
 
