@@ -1,0 +1,8 @@
+.fable
+.fake
+.ionide
+bin
+node_modules
+obj
+public
+*.fs.js
