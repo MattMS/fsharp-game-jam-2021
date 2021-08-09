@@ -1,0 +1,71 @@
+extends ./index.pug
+
+block main
+	+screen("start")
+		p Welcome home, my friend. You've been away a long time. Things are quite different around these parts.
+		+action-group
+			+action("#who") Who are you?
+			+action("#tazos") Oh my goodness! My Tazos? Are they safe??!
+			+action("#rush") I have no time for this
+
+	+screen("cnc")
+		p Cat Nip Corporation: the most evil company to ever be spawned into existence.
+		p.
+			They put on the friendly face of caring for cats and people,
+			but they are really just a law firm that will destroy anyone they can.
+
+	+screen("disfiguration")
+		p Obviously you have noticed my hideous scarring.
+		p.
+			It was during the battle, with your folks.
+			I mean, not "with" with your folks, I mean just at the same battle together.
+			We were friends. Like, total besties. For real.
+		p Anyway, they were there and so was I, and we (being total besties) were fighting The Big One, together, as a team.
+		p During this horrific battle, quite possibly the most epic ever, there was a moment when I was vulnerable and one of the minions of The Big One jumped me.
+		p Now, normally I'd be disposing of it pretty quickly, but I was powering up my next attack against The Big One, so I wasn't preparing for these other side attacks.
+		p.
+			I say minion, but it was pretty serious, at least a couple thousand grams of it, launching right at me. I barely had time to adjust myself before the deadly claws made contact.
+		p.
+			If it had been a little bit to the side,
+			a few inches deeper,
+			and had I not been wearing a helmet,
+			then I may not be here today,
+			and you'd likely not be standing here awe-stricken at this story.
+		+action-group
+			+action("#why") A truly epic tale. But I must ask why a great warrior as yourself would be helping me?
+
+	+screen("not-bad")
+		p You're too kind. I imagine you are holding back the vomit just looking at me. I don't blame you.
+		+action-group
+			+action("#why") ...anyway, why are you helping me?
+
+	+screen("rush")
+		p Oh... well, ok. Umm... I guess I'll just be... off then. Err... good luck?
+		+action-group
+			+action("ranch.html#start") Bye
+
+	+screen("tazos")
+		p Err, possibly. We may have bigger problems though.
+		+action-group
+			+action("#who") Maybe we do and maybe we don't, I shall be the judge of this. Anyway, who are you?
+
+	+screen("who")
+		p.
+			I'm not surprised you don't recognise me.
+			You were only a little tacker back then, and that was before my hideous disfiguration.
+		+action-group
+			+action("#disfiguration") Disfiguration?
+			+action("#not-bad") You don't look that bad
+
+	+screen("why")
+		p It was your folks that saved me from The Big One.
+		p They saved a bunch of us around here, and we don't forget these things.
+		p After what they did for all of us, and then the CNC coming in and stealing your family recipe.
+		p.
+			We tried to fight them, you know!
+			For your folks.
+			But they lawyered us good.
+			Not many of us made it out of there the same.
+		p Old mate Billy is still working off his fees. They've got him in the Fodder Fields.
+		+action-group
+			+action("#cnc") CNC?

@@ -1,0 +1,49 @@
+mixin action-group
+	nav: ul
+		block
+
+mixin action(href)
+	li: a(href=href)
+		block
+
+mixin screen(id)
+	article.story(id=id)
+		block
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title JAM Game by MattMS
+
+		//- To inline the CSS, you can use `style: include all.css`
+		link(href="all.css" rel="stylesheet")
+
+		//- https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+		//- https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+		//- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link
+		link(href="light.css" media="(prefers-color-scheme: light)" rel="stylesheet")
+		link(href="dark.css" media="(prefers-color-scheme: dark)" rel="stylesheet")
+
+		script(src="bundle.js")
+
+	//- The `no-script` class is included here to hide anything with the `needs-script` classes below it.
+	body.no-script
+		script document.body.classList.remove("no-script")
+
+		header
+			block game-nav
+
+		main
+			block main
+				h1.title JAM (Just Another Milking) game in F#
+				p.subtitle For the F# Game Jam 2021
+
+				nav.home
+					a#start(href="introduction.html#start") Start game
+
+		footer
+			nav
+				a(href="index.html") Home
+				a(href="about.html") About
+				a(href="https://itch.io/jam/fsharp-jam") I'm done here

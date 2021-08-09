@@ -1,0 +1,19 @@
+extends ./index.pug
+
+block game-nav
+	nav.needs-script
+		span Visit the
+		ul
+			//- li: a(href="field.html") Fields
+			li: a(href="feeding.html") Feeding
+			li: a(href="ranch.html") Ranch
+			li: a(href="shop.html") Shop
+
+block main
+	#game.game-script
+	script CatGame.RanchGameView_mount("game")
+
+	noscript
+		+screen("start")
+			p You have returned to your parents old ranch.
+			p There is much work to be done.
